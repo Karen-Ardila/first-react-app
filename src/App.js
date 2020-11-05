@@ -1,19 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import PersonCard from './components/personCard'
 
 const App = () => {
   return (
     <div>
-      <h1>Hello Dojo</h1>
-      <h3>Things to do:</h3>
-      <ul>
-        <li>Learn react</li>
-        <li>Travel the world</li>
-        <li>Love on my doggies</li>
-        <li>Byedon 2020</li>
-      </ul>
+      <PersonCard firstName='Karen'
+        lastName='Ardila'
+        age={26}
+        hairColor='dark Brown' />
+      <PersonCard firstName='Toto'
+        lastName='Crybaby'
+        age={11}
+        hairColor='bronde' />
+      <PersonCard firstName='Chloe'
+        lastName='Elizabeth'
+        age={9}
+        hairColor='black' />
     </div>
-    
+
   );
 }
 
